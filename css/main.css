@@ -80,7 +80,7 @@ body {
 /* 헤더 */
 .header {
   background-color: #fff;
-  padding: 0 30px 0 30px;
+  padding: 0 30px;
   border-radius: 0 0 15px 15px;
   position: relative;
 }
@@ -88,8 +88,8 @@ body {
 .logo {
   position: absolute;
   margin: 0;
-  top: 45px;
-  left: 65px;
+  top: 65px;
+  left: 45px;
 }
 /* 멤버 링크 */
 .member {
@@ -114,7 +114,33 @@ body {
 }
 /* 메인 메뉴 */
 .navigation {
-  background-color: orange;
+  padding-bottom: 50px;
+}
+.menu {
+  background: #f24d30
+    linear-gradient(
+      to bottom,
+      #e0802c 0%,
+      #f24d30 35%,
+      #f24d30 65%,
+      #e0802c 100%
+    );
+  margin: 5px 0 0;
+  padding-left: 0;
+  list-style-type: none;
+  /* box-shadow: 0 -2px 5px 0 #000; */
+  border-top: 2px solid #000;
+  border-radius: 0 0 5px 5px;
+}
+.menu-link {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.submenu {
+  padding-left: 0;
+  list-style-type: none;
+  background-color: pink;
 }
 /* 메인 콘텐츠 */
 .main {
