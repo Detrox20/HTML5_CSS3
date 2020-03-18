@@ -1,6 +1,12 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 @import url(./normalize.css);
-
+/* CSS class module */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+  background-color: olive;
+}
 .container {
   background-color: silver;
 }
@@ -14,7 +20,6 @@
 }
 .main {
   background-color: blue;
-  height: 60vh;
 }
 .group1 {
   background-color: pink;
@@ -62,12 +67,21 @@ body {
 /* .header {
 } */
 /* 메인 콘텐츠 */
-.main {
+/* .main {
   display: flex;
   flex-flow: row nowrap;
   align-items: stretch;
   justify-content: space-between;
   padding: 30px;
+} */
+.main {
+  overflow: auto;
+  padding: 30px 15px;
+}
+.group {
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .group1 {
   width: 250px;
@@ -78,3 +92,6 @@ body {
 .group3 {
   width: 190px;
 }
+/* 슬로건 */
+/* .slogan {
+} */
