@@ -85,19 +85,24 @@ body {
 /* 멤버 링크 */
 .member {
   margin: 0;
-  background-color: yellow;
   list-style: none;
   padding-left: 0;
   text-align: right;
   font-size: 0;
+  text-transform: uppercase;
+  padding: 2px 0;
+  margin-right: -10px;
+}
+.member li,
+.member a {
+  display: inline-block;
 }
 .member li {
-  background-color: pink;
-  display: inline;
   font-size: 1.4rem;
 }
-/* .member a {
-} */
+.member a {
+  padding: 8px 10px;
+}
 /* 메인 메뉴 */
 .navigation {
   background-color: orange;
