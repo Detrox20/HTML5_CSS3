@@ -6,6 +6,15 @@
   clear: both;
   display: block;
 }
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  background-color: blue;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
 .container {
   background-color: silver;
 }
