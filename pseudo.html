@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .orange ~ li:hover {
+        color: red;
+        font-weight: bolder;
+        font-size: 20px;
+      }
+      .orange ~ li:active {
+        color: #1581da;
+        font-weight: lighter;
+        font-size: 30px;
+      }
+      .orange::before {
+        content: ":";
+        font-size: 30px;
+      }
+      .ha {
+        background-color: #008cff;
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+      }
+      .ha:hover {
+        background-color: #1f8cca;
+        width: 150px;
+        height: 150px;
+        border-radius: 15px;
+        transition: 1s;
+      }
+      .text {
+        width: 300px;
+      }
+      .text:focus {
+        border: 5px solid #007cff;
+        transition: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" class="text" />
+    <div class="ha"></div>
+    <div class="ha"></div>
+    <div class="ha"></div>
+    <div class="ha"></div>
+    <div class="ha"></div>
+    <div>
+      <ul>
+        <li>사과</li>
+        <li>포도</li>
+        <li class="orange">오렌지</li>
+        <li>덩</li>
+        <li>후</li>
+      </ul>
+    </div>
+  </body>
+</html>

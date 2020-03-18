@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+}
+.container {
+  background-color: silver;
+}
+.header {
+  background-color: yellow;
+  height: 10vh;
+}
+.visual {
+  background-color: lime;
+  height: 10vh;
+}
+.main {
+  background-color: blue;
+  height: 60vh;
+}
+.group1 {
+  background-color: pink;
+}
+.group2 {
+  background-color: orange;
+}
+.group3 {
+  background-color: skyblue;
+}
+.slogan {
+  background-color: blueviolet;
+  height: 10vh;
+}
+.footer-bg {
+  background-color: teal;
+}
+.footer {
+  background-color: tomato;
+  height: 10vh;
+}
+/* 기본 Box Sizing */
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
+/* 레이아웃 */
+.header,
+.visual,
+.main,
+.slogan,
+.footer {
+  width: 940px;
+  margin: 0 auto;
+}
+/* 헤더 */
+/* .header {
+} */
+/* 메인 콘텐츠 */
+.main {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 30px;
+}
+.group1 {
+  width: 250px;
+}
+.group2 {
+  width: 380px;
+}
+.group3 {
+  width: 190px;
+}
