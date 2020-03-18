@@ -42,11 +42,21 @@ body *::before,
 body *::after {
   box-sizing: border-box;
 }
-
+/* 하이퍼 링크 스타일 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
 /* 본문 기본 설정 */
+html {
+  font-size: 10px;
+}
 body {
   font-family: "Spoqa Han Sans", "Sans-serif";
   font-weight: 400;
+  font-size: 1.4rem;
+  color: #181818;
+  background-color: #fff;
 }
 
 /* 레이아웃 */
@@ -78,15 +88,18 @@ body {
   background-color: yellow;
   list-style: none;
   padding-left: 0;
-  float: right;
+  text-align: right;
+  font-size: 0;
 }
 .member li {
   background-color: pink;
-  float: left;
+  display: inline;
+  font-size: 1.4rem;
 }
+/* .member a {
+} */
 /* 메인 메뉴 */
 .navigation {
-  clear: both;
   background-color: orange;
 }
 /* 메인 콘텐츠 */
