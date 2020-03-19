@@ -141,6 +141,7 @@ body {
   border-left: 2px solid white;
 }
 .menu-link {
+  outline: 0;
   display: block;
   line-height: 45px; /* 한 줄이 45px */
   color: #fff;
@@ -148,6 +149,18 @@ body {
   font-size: 1.6rem;
   padding: 0 20px;
   text-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: yellow;
+}
+
+/* after은 inline = span */
+.menu-item-act .menu-link::after {
+  content: ""; /* line-height 때문에 아래에 같은 크기의 45px 가상 박스가 만들어짐 */
+  display: block;
+  height: 2px;
+  background-color: #181818;
 }
 .submenu {
   /* float: left;
@@ -157,7 +170,6 @@ body {
   top: 47px;
   padding-left: 0;
   list-style-type: none;
-  background-color: pink;
   display: none; /* 임시 */
   white-space: nowrap; /* 줄바꿈 금지 */
 }
@@ -176,12 +188,10 @@ body {
   display: block;
 }
 .submenu li {
-  background-color: yellow;
   display: inline-block;
   margin-right: 10px;
 }
 .submenu a {
-  background-color: orange;
   padding: 10px 0;
   display: block;
 }
