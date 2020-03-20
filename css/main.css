@@ -188,6 +188,22 @@ body {
   display: block;
 }
 /* 비주얼 */
+/* @keyframes flower {
+  0% {
+    background-image: url(./images/ani_flower_01.png),
+      url(./images/ani_flower_03.png);
+    background-size: cover;
+    display: inline;
+    opacity: 1;
+  }
+  100% {
+    background-image: url(./images/ani_flower_02.png),
+      url(./images/ani_flower_04.png);
+    background-size: cover;
+    display: inline;
+    opacity: 1;
+  }
+} */
 @keyframes textAni {
   0% {
     opacity: 0;
@@ -205,20 +221,49 @@ body {
   }
 }
 .visual {
+  /* animation: flower 0.5s 1s forwards;
+  background-image: url(./images/bg_flower.png); */
   height: 120px;
+  display: block;
   position: relative;
 }
+.visual::before,
+.visual::after {
+  content: "가상 요소 박서";
+  width: 100%;
+  height: 100%;
+  position: absolute; /* absolute 되면 block 요소가 됨 */
+  left: 0;
+  top: 0;
+}
+.visual::before {
+  /* background-color: yellow;
+  background-image: url(./images/ani_flower_01.png),
+    url(./images/ani_flower_02.png);
+  background-repeat: no-repeat; */
+
+  background: url(./images/ani_flower_01.png) no-repeat 0 -10px,
+    url(./images/ani_flower_02.png) no-repeat 670px 0;
+  /* background는 반대로 깔리기 때문에 배경칼라가 제일 뒤에 요소에 넣어야됨 */
+  background-color: yellow;
+  /* background-color 제일 뒤로 빼라 */
+}
+.visual::after {
+  background: url(./images/ani_flower_03.png) no-repeat 300px 0,
+    url(./images/ani_flower_04.png) no-repeat 800px 0;
+}
 .visual-text {
+  opacity: 0;
   background-color: #1582da;
-  position: absolute;
-  animation: textAni 2s forwards ease-out;
+  animation: textAni 0.5s forwards 1s alternate ease-in-out;
   /* animation-name: textAni;
-  animation-direction: alternate;
+  animation-direction: alternate; 왔다리 갔다리
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
   animation-duration: 1s; */
+  /* animation-play-state: running; javascript랑 같이 쓰는 속성 */
   font-family: Georgia, "Times New Roman", Times, serif;
-  /* display: inline-block; */
+  display: inline-block;
 }
 /* 메인 콘텐츠 */
 .main {
