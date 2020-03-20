@@ -19,10 +19,7 @@
 .container {
   background-color: silver;
 }
-.visual {
-  background-color: lime;
-  height: 10vh;
-}
+
 .main {
   background-color: blue;
 }
@@ -61,6 +58,7 @@ a {
 html {
   font-size: 10px;
 }
+
 body {
   font-family: "Spoqa Han Sans", "Sans-serif";
   font-weight: 400;
@@ -68,6 +66,7 @@ body {
   color: #181818;
   background-color: #fff;
 }
+
 /* 레이아웃 */
 .header,
 .visual,
@@ -117,8 +116,6 @@ body {
   padding-bottom: 40px;
 }
 .menu {
-  /* display: flex;
-  justify-content: space-around; */
   background: #f24d30
     linear-gradient(
       to bottom,
@@ -127,10 +124,11 @@ body {
       #f24d30 65%,
       #e0802c 100%
     );
-  margin: 5px 0 0;
+  margin-top: 5px;
+  margin-bottom: 0;
   padding-left: 229px;
   list-style-type: none;
-  /* box-shadow: 0 -2px 5px 0 #000;  */ /* shadow는 box-sizing에 영향을 주지 않음 */
+  /* box-shadow: 0 -2px 5px 0 #000; */
   border-top: 2px solid #000;
   border-radius: 0 0 5px 5px;
   height: 47px;
@@ -138,40 +136,35 @@ body {
 .menu-item {
   position: relative;
   float: left;
-  border-left: 2px solid white;
+  border-left: 2px solid #fff;
 }
 .menu-link {
   outline: 0;
   display: block;
-  line-height: 45px; /* 한 줄이 45px */
   color: #fff;
   font-weight: 700;
   font-size: 1.6rem;
+  line-height: 45px;
   padding: 0 20px;
-  text-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
 }
-.menu-link:hover,
+.menu-item-act .menu-link,
 .menu-link:focus {
-  color: yellow;
+  color: #ff0;
 }
-
-/* after은 inline = span */
 .menu-item-act .menu-link::after {
-  content: ""; /* line-height 때문에 아래에 같은 크기의 45px 가상 박스가 만들어짐 */
+  content: "";
   display: block;
+  background-color: #000;
   height: 2px;
-  background-color: #181818;
 }
 .submenu {
-  /* float: left;
-  left: 0px;
-  top: 20px; */
   position: absolute;
   top: 47px;
   padding-left: 0;
   list-style-type: none;
-  display: none; /* 임시 */
-  white-space: nowrap; /* 줄바꿈 금지 */
+  display: none;
+  white-space: nowrap;
 }
 .menu > li:nth-child(1) .submenu,
 .menu > li:nth-child(2) .submenu,
@@ -183,7 +176,6 @@ body {
 .menu > li:nth-child(6) .submenu {
   right: 0;
 }
-
 .menu-item-act .submenu {
   display: block;
 }
@@ -194,6 +186,39 @@ body {
 .submenu a {
   padding: 10px 0;
   display: block;
+}
+/* 비주얼 */
+@keyframes textAni {
+  0% {
+    opacity: 0;
+    font-size: 10px;
+    transform: translate(0, 0);
+    /* top: 0;
+    left: 0; */
+  }
+  100% {
+    opacity: 1;
+    font-size: 24px;
+    transform: translate(400px, 75px);
+    /* top: 70px;
+    left: 400px; */
+  }
+}
+.visual {
+  height: 120px;
+  position: relative;
+}
+.visual-text {
+  background-color: #1582da;
+  position: absolute;
+  animation: textAni 2s forwards ease-out;
+  /* animation-name: textAni;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s; */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* display: inline-block; */
 }
 /* 메인 콘텐츠 */
 .main {
@@ -213,5 +238,5 @@ body {
   width: 190px;
 }
 /* 슬로건 */
-/* .slogan {
-} */
+.slogan {
+}
