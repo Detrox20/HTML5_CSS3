@@ -56,11 +56,11 @@ html {
 }
 
 body {
-  font-family: "Spoqa Han Sans", "Sans-serif";
+  font-family: "Spoqa Han Sans", "Lucida Sans", "Arial", "Sans-Serif";
   font-weight: 400;
   font-size: 1.4rem;
   color: #181818;
-  background: url(./images/bg_flower.png) no-repeat 50% 0%,
+  background: url(./images/bg_flower.png) no-repeat /* x축 y축 */ 50% 0%,
     green linear-gradient(180deg, #ccc, #eee, #fff);
 
   /* linear-gradient는 background-image 임 */
@@ -281,6 +281,9 @@ body {
   align-items: stretch;
   justify-content: space-between;
   padding: 30px;
+  min-height: 400px;
+  background-color: white;
+  border-radius: 15px 15px 0;
 }
 .group1 {
   width: 250px;
