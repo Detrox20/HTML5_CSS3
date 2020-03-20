@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>애니메이션 관련 속성</title>
+    <style>
+      @keyframes ani01 {
+        0% {
+          background-color: pink;
+          opacity: 0.5;
+        }
+        100% {
+          background-color: yellow;
+          border-radius: 100%;
+          opacity: 1;
+        }
+      }
+      .box {
+        animation-name: ani01;
+        animation-duration: 1.5s;
+        animation-delay: 0.3s;
+        opacity: 0;
+        animation-iteration-count: 3;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out; /* linear 선형함수 / ease-in-out 지수함수 */
+        border: 2px solid #000;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        line-height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      애니메이션
+    </div>
+  </body>
+</html>
