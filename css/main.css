@@ -16,10 +16,6 @@
   clip: rect(0, 0, 0, 0);
   clip-path: polygon(0 0, 0 0, 0 0);
 }
-.container {
-  background-color: silver;
-}
-
 .main {
   background-color: blue;
 }
@@ -64,7 +60,10 @@ body {
   font-weight: 400;
   font-size: 1.4rem;
   color: #181818;
-  background-color: #fff;
+  background: url(./images/bg_flower.png) no-repeat 50% 0%,
+    green linear-gradient(180deg, #ccc, #eee, #fff);
+
+  /* linear-gradient는 background-image 임 */
 }
 
 /* 레이아웃 */
@@ -243,7 +242,7 @@ body {
   position: absolute; /* absolute 되면 block 요소가 됨 */
   left: 0;
   top: 0;
-  background: bgAni 2s infinite alternate;
+  animation: bgAni 2s infinite 2s alternate;
 }
 .visual::before {
   /* background-color: yellow;
