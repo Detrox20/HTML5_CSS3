@@ -20,9 +20,6 @@ legend {
 .main {
   background-color: blue;
 }
-.group1 {
-  background-color: pink;
-}
 .group2 {
   background-color: yellowgreen;
 }
@@ -447,6 +444,25 @@ label {
   display: flex;
   letter-spacing: -1px; /* 자간 */
   justify-content: space-between;
+}
+/* 유효성 검사 배너 링크 */
+.validation-list {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0; /* box-shadow 때문에 실질적으로 25px이 아님 */
+}
+.validation-list li {
+  margin-bottom: 10px;
+}
+.validation-list li a {
+  border: 1px solid #ccc;
+  background: url(./images/validation_icon.png) no-repeat 25px 50%,
+    #ddd linear-gradient(#ddd, #eee);
+  border-radius: 100px;
+  display: block;
+  line-height: 30px;
+  text-indent: 50px; /* 들여쓰기 */
+  font-size: 1.4rem;
 }
 /* 슬로건 */
 .slogan {
