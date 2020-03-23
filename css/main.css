@@ -7,7 +7,8 @@
   clear: both;
   display: block;
 }
-.a11y-hidden {
+.a11y-hidden,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -23,7 +24,7 @@
   background-color: pink;
 }
 .group2 {
-  background-color: orange;
+  background-color: yellowgreen;
 }
 .group3 {
   background-color: skyblue;
@@ -293,6 +294,159 @@ body {
 }
 .group3 {
   width: 190px;
+}
+/* 로그인 */
+/* .login {
+  background: radial-gradient(rgb(231, 116, 71), rgb(255, 72, 0));
+  padding: 0px 10px 10px 10px;
+  border-radius: 10px;
+}
+.group1 {
+  width: 250px;
+}
+.login-form {
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+  margin: 0;
+  position: relative;
+}
+.login-heading {
+  line-height: 40px;
+  font-size: 1.5rem;
+  margin: 0;
+  padding-left: 15px;
+  color: yellow;
+}
+fieldset {
+  border: 0px;
+}
+label {
+  display: inline-block;
+  width: 55px;
+}
+.user-email {
+  width: 160px;
+  margin: 5px 0;
+}
+.userEmail {
+  display: inline-block;
+  width: 50px;
+  margin: 0;
+}
+.user-pw {
+  width: 160px;
+  margin: 5px 0;
+}
+.userPw {
+  margin: 0;
+}
+.btn-login {
+  background-color: rgb(255, 72, 0);
+  width: 50px;
+  height: 50px;
+  color: #f7f7f7;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 175px;
+}
+.sign {
+  background-color: khaki;
+  margin: 0;
+  padding: 0px 15px;
+  border-radius: 0px 0px 5px 5px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+}
+.sign li {
+  padding: 0;
+  margin: 0;
+} */
+.login {
+  background-color: #e8852e;
+  background-image: radial-gradient(circle at right top, #e8852e, #ed552f);
+  border-radius: 5px;
+  box-shadow: 5px 5px #ccc;
+  padding: 10px;
+}
+.login-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffff00;
+}
+.login-form,
+.sign {
+  background-color: #f7f7f7;
+  padding-left: 0;
+  padding-right: 0;
+}
+.login-form {
+  border-radius: 5px 5px 0 0;
+  padding-top: 10px;
+}
+.login-form fieldset {
+  margin: 0;
+  padding: 0 5px;
+  border: 0;
+  background-color: skyblue;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  padding-bottom: 5px;
+}
+.user-email,
+.user-pw {
+  margin-bottom: 5px;
+  background-color: yellow;
+}
+.login-form label {
+  background-color: pink;
+  display: inline-block;
+  width: 4em; /*현재 크기만큼이라 em */
+}
+/* .login-form input {
+  width: 95px;
+  height: 24px;
+  padding: 1px 1px 1px 5px;
+  border: 1px solid #ccc; 
+} */
+/* [name^="user"] */
+[name="userEmail"],
+[name="userPw"] {
+  width: 100px;
+  height: 24px;
+  padding: 1px 1px 1px 5px;
+  border: 1px solid #ccc;
+}
+.btn-login {
+  position: absolute;
+  padding: 0px;
+  top: 0;
+  right: 10px;
+  width: 50px;
+  height: 53px;
+  border: 1px solid #e8852e;
+  background-color: #ed552f;
+  color: white;
+  padding: 0px;
+  border-radius: 5px;
+}
+.sign {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 0;
+  list-style: none;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  letter-spacing: -1px; /* 자간 */
+  justify-content: space-between;
 }
 /* 슬로건 */
 .slogan {
