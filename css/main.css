@@ -568,6 +568,62 @@ label {
 .even {
   margin-top: 10px;
 }
+/* 검색 폼 */
+/* .search {
+  background: linear-gradient(#ccc, #eee);
+  border: 1px solid #888;
+  border-bottom: 1px solid #eee;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  flex: row nowrap;
+  justify-content: space-around;
+  padding: 15px 0 5px 0;
+  margin: 0;
+}
+.search fieldset {
+  border-width: 0px;
+}
+.search fieldset input {
+  margin: 0 3px;
+}
+.search .search-btn {
+  color: #f7f7f7;
+  background: linear-gradient(#202020, #999, #202020);
+  font-weight: 400;
+} */
+.search {
+  border: 1px solid #aaa;
+  border-bottom-color: #fff;
+  border-radius: 15px 15px 0 0;
+  padding: 15px 25px 10px;
+  background: #ccc linear-gradient(#ccc, #eee);
+}
+.search fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: tomato;
+}
+.search-form .flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+[name="keyword"] {
+  width: 150px;
+  height: 24px;
+  border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+  border-radius: 3px;
+}
+.search-btn {
+  height: 24px;
+  border: 1px solid #aaa;
+  background-color: #181818;
+  color: #f7f7f7;
+  padding: 0px 10px;
+  border-radius: 3px;
+}
 /* 슬로건 */
 .slogan {
 }
