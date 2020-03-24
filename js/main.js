@@ -1,14 +1,15 @@
-var menuItems = $(".menu-item"); // string으로 선언해야됨
+var menuItems = $(".menu-item");
 var menuLinks = $(".menu-link");
 var subLinks = $(".submenu a");
+var boardItems = $(".board li");
 
-subLinks.attr("class", "icon-dot-circled"); // attribute
+subLinks.attr("class", "icon-dot-circled");
+boardItems.attr("class", "icon-dot-circled");
 
 menuLinks.click(function(e) {
-  // 파라미터e값은 click event를 기억할
-  e.preventDefault(); //a 의 기본이벤트가 발생 href # 때문에
+  e.preventDefault();
   menuItems.removeClass("menu-item-act");
   $(this)
     .parent()
-    .addClass("menu-item-act"); //나의 부모를 찾아감 클래스 추가 JQ에서만 지원
+    .addClass("menu-item-act");
 });
