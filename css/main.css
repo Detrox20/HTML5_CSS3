@@ -449,20 +449,124 @@ label {
 .validation-list {
   list-style: none;
   padding: 0;
-  margin: 25px 0; /* box-shadow 때문에 실질적으로 25px이 아님 */
+  margin: 25px 0 0 0; /* box-shadow 때문에 실질적으로 25px이 아님 */
 }
 .validation-list li {
   margin-bottom: 10px;
 }
 .validation-list li a {
-  border: 1px solid #ccc;
+  border: 1px solid #999;
   background: url(./images/validation_icon.png) no-repeat 25px 50%,
-    #ddd linear-gradient(#ddd, #eee);
+    #ccc linear-gradient(#ccc, #eee);
   border-radius: 100px;
   display: block;
   line-height: 30px;
   text-indent: 50px; /* 들여쓰기 */
   font-size: 1.4rem;
+}
+/* 웹 관련 용어 */
+/* .term {
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #999;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding-right: 10px;
+}
+.term-heading {
+  margin: 15px 0px 15px 15px;
+  font-size: 1.6rem;
+  position: relative;
+}
+.term-list-subject::before {
+  clear: both;
+  content: "";
+  display: block;
+}
+.term-list-subject {
+  float: right;
+  width: 155px;
+  padding: 0;
+  margin-bottom: 10px;
+  color: #18a6f4;
+}
+.term-list-thumbnail {
+  float: left;
+  top: 0px;
+  left: 0px;
+  padding: 0 10px 0 12px;
+  margin: 0;
+}
+.term-list-thumbnail::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.term-list-brief {
+  display: inline;
+  padding: 0;
+  margin: 0;
+} */
+.term {
+  margin-top: 20px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background: linear-gradient(#ccc, #eee);
+  padding: 15px;
+}
+.term-heading {
+  margin: 0;
+  font-size: 1.6rem;
+}
+.term-list {
+  /* overflow: hidden; */
+  margin: 15px 0 0;
+}
+.term-list dd {
+  margin-left: 0;
+}
+.term-list-subject,
+.term-list-brief {
+  background-color: #95ab12;
+  float: right;
+  width: 145px;
+}
+.term-list-subject {
+  font-weight: 700;
+  color: #296897;
+}
+.term-list-thumbnail {
+  background-color: pink;
+  float: left;
+}
+.term-list-thumbnail img {
+  vertical-align: bottom;
+}
+.term-list-brief {
+  margin-top: 5px;
+}
+/* 
+.even::before {
+  clear: both;
+  content: "";
+  display: block;
+  margin-top: 80px;
+}
+.even .term-list-subject,
+.term-list-brief {
+  float: left;
+}
+.even .term-list-thumbnail img {
+  float: right;
+} */
+.term-list .even .term-list-subject,
+.term-list .even .term-list-brief {
+  float: left;
+}
+.term-list .even .term-list-thumbnail {
+  float: right;
+}
+.even {
+  margin-top: 10px;
 }
 /* 슬로건 */
 .slogan {
