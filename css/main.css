@@ -650,6 +650,7 @@ label {
   position: absolute;
   background-color: tomato;
 } */
+/*
 .board {
   background-color: yellow;
   margin-top: 20px;
@@ -687,8 +688,8 @@ label {
 }
 .notice-list,
 .pds-list {
-  width: 100%; /* position absolute시 반드시 크기 고정 */
-  position: absolute;
+  width: 100%; */ /* position absolute시 반드시 크기 고정 */
+/* position: absolute;
   top: 45px;
   left: 0px;
   list-style: none;
@@ -703,18 +704,18 @@ label {
   display: flex;
 }
 .board ul a {
-  background-color: olive;
-  /* display: inline-block;
+  background-color: olive; */
+/* display: inline-block;
   width: 270px; */
-  white-space: nowrap; /* 개행 금지 */
-  overflow: hidden;
+/* white-space: nowrap; */ /* 개행 금지 */
+/* overflow: hidden;
   text-overflow: ellipsis;
   flex-grow: 1;
 }
 .board time {
-  background-color: palegreen;
-  /* float: right; */
-}
+  background-color: palegreen; */
+/* float: right; */
+/* }
 .more {
   background-color: tomato;
   position: absolute;
@@ -727,11 +728,81 @@ label {
 }
 .board-act [class$="-list"],
 .board-act .more {
-  display: block !important;
+  display: block !important; 
 } /* class$= ~로 끝나는 */
-.board-act [class$="-list"],
+/* .board-act [class$="-list"],
 .more {
   display: none;
+} */
+.board {
+  position: relative;
+  padding-top: 40px;
+  margin-top: 45px;
+}
+.notice-heading {
+  left: 0;
+}
+.pds-heading {
+  left: 74px;
+}
+
+.board h2 {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400;
+}
+.board-act h2 {
+  z-index: 10 !important;
+}
+.tab {
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  color: #999;
+  border-radius: 5px;
+  background: #aaa linear-gradient(#ccc, #eee);
+}
+.board-act .tab {
+  border-color: #ed552f #ed552f #fff #ed552f;
+  color: #ed552f;
+}
+.board ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: none;
+  background: pink;
+  min-height: 112px;
+}
+.board li {
+  background: yellow;
+  margin: 8px 0;
+}
+.board li a {
+  background-color: skyblue;
+  width: 275px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: bottom; /* 인라인 요소에 배치 */
+  text-overflow: ellipsis;
+}
+.board-act ul,
+.board-act .more {
+  display: block !important;
+}
+.more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+  display: none;
+}
+.more .icon-plus {
+  color: hsla(110, 50%, 30%, 1);
 }
 /* 슬로건 */
 .slogan {
