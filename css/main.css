@@ -804,6 +804,113 @@ label {
 .more .icon-plus {
   color: hsla(110, 50%, 30%, 1);
 }
+/* 뉴스 */
+/* .news {
+  background-color: teal;
+  margin-top: 10px;
+  position: relative;
+}
+.news-heading {
+  background-color: pink;
+  position: relative;
+  margin: 35px 0;
+  padding: 0;
+}
+
+.news-link {
+  background-color: steelblue;
+  display: block;
+  height: 200px;
+}
+.news-item-subject,
+.news-item-date,
+.news-item-brief {
+  float: right;
+  display: inline-block;
+  width: 250px;
+  margin: 0;
+}
+.news-item-subject {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.news-item-date {
+  margin-top: 2px;
+}
+.news-item-brief {
+  margin-top: 16px;
+}
+.news-item-thumbnail {
+  background-color: tomato;
+  display: inline-block;
+  margin: 0;
+  float: left;
+}
+.news .more {
+  float: right;
+  background-color: red;
+  display: block;
+} */
+
+.news {
+  background-color: yellow;
+  margin-top: 20px;
+}
+.news::before {
+  background-color: cadetblue;
+  display: block;
+  content: "";
+  width: 80%;
+  height: 1px;
+  position: absolute;
+  border: 10px solid darkblue;
+  background: linear-gradient(90deg, #ccc, #fff);
+  top: 30px;
+  left: 0;
+}
+.news-heading {
+  margin: 0;
+  color: #ed552f;
+  font-size: 1.5rem;
+}
+.news-item {
+  background-color: pink;
+  margin-top: 35px;
+  position: relative;
+}
+.news-link {
+  background-color: skyblue;
+  display: block;
+  padding-left: 130px;
+}
+.news-item-subject {
+  background-color: lime;
+  margin: 0;
+  font-size: 1.4rem;
+}
+.news-item-date {
+  display: block;
+  margin-top: 5px;
+}
+.news-item-brief {
+  background-color: bisque;
+  margin: 15px 0 0;
+  line-height: 1.5;
+}
+.news-item-thumbnail {
+  background-color: orange;
+  margin: 0;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  text-align: center;
+}
+.news-item-thumbnail img {
+  box-shadow: 0 15px 15px 0 #aaa;
+}
+.news-item-thumbnail figcaption {
+  margin-top: 15px;
+}
 /* 슬로건 */
 .slogan {
 }
