@@ -21,9 +21,6 @@ legend /* ,
 .main {
   background-color: blue;
 }
-.group3 {
-  background-color: skyblue;
-}
 .slogan {
   background-color: blueviolet;
   height: 10vh;
@@ -982,12 +979,19 @@ label {
   background-color: pink;
   padding: 20px 0 0 0;
 } */
+.gradient {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  background: #ccc linear-gradient(#ccc, #eee);
+}
 .event {
   background-color: lime;
   position: relative;
   border-bottom: 1px solid #999;
 }
-.event-heading {
+.event-heading,
+.related-heading {
   font-size: 1.5rem;
   margin: 0;
 }
@@ -1025,6 +1029,76 @@ label {
 }
 .event-button-next {
   background-position: -36px 0;
+}
+/* 관련 사이트*/
+/* .related-site {
+  margin-top: 10px;
+}
+.related-site-list {
+  list-style: none;
+  height: 27px;
+  background-color: #f7f7f7;
+  text-align: start;
+  border-radius: 5px;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.related-site-list li {
+  text-indent: 15px;
+  padding: 2px 0 6px 0;
+}
+.related-site-list li a {
+  display: block;
+  line-height: 25px;
+}
+@keyframes relatedSite {
+  0% {
+    height: 27px;
+  }
+  100% {
+    height: 160px;
+  }
+}
+.related-site-list:hover {
+  animation: relatedSite;
+  outline: 2px solid #296897;
+  outline-offset: 2px;
+  animation-delay: 0.2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+} */
+.related-list {
+  height: 27px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden;
+  transition: all 0.4s;
+  /* transition: height 2s, padding 0.5s 2s; */
+  /* transition-property: height, padding;
+  transition-duration: 2s, 0.5s;
+  transition-delay: 0s, 2s; */
+}
+.related-list:hover,
+.related-list:focus-within {
+  height: 147px;
+  padding: 10px 0;
+  outline: none;
+}
+.related-list a {
+  display: block;
+  line-height: 25px;
+  text-indent: 20px;
+}
+.related-list a:focus {
+  outline: 1px solid #296897;
+  outline-offset: -4px;
 }
 /* 슬로건 */
 .slogan {
