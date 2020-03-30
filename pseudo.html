@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
+      .perspective {
+        perspective: 500px;
+        perspective-origin: 200% 200%;
+        backface-visibility: hidden;
+        width: 100px;
+      }
+      .grandparent {
+        border: 5px solid dodgerblue;
+        transform: rotateX(45deg);
+        transform-style: preserve-3d;
+      }
+      .parent {
+        border: 5px solid tomato;
+        transform: rotateY(45deg);
+        transform-style: preserve-3d;
+      }
+      #transform-style {
+        transform: rotateX(45deg);
+        width: 100px;
+      }
       .orange ~ li:hover {
         color: red;
         font-weight: bolder;
@@ -24,13 +47,15 @@
         width: 100px;
         height: 100px;
         border-radius: 10px;
+        transition: 1s;
+        transform-origin: 100% 100%;
+        margin: 30px;
       }
       .ha:hover {
         background-color: #1f8cca;
-        width: 150px;
-        height: 150px;
+        transform: perspective(100px) rotate(45deg);
+
         border-radius: 15px;
-        transition: 1s;
       }
       .text {
         width: 300px;
@@ -42,9 +67,18 @@
     </style>
   </head>
   <body>
+    <div class="perspective">
+      <div class="grandparent">
+        <div class="parent">
+          <img
+            src="./images/html5_logo.png"
+            id="transform-style"
+            alt="HTML5 logo"
+          />
+        </div>
+      </div>
+    </div>
     <input type="text" class="text" />
-    <div class="ha"></div>
-    <div class="ha"></div>
     <div class="ha"></div>
     <div class="ha"></div>
     <div class="ha"></div>
